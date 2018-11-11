@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
+use app;
+use Illuminate\Database\Eloquent\Controllers;
+
 
 class UserController extends Controller
 {
@@ -154,12 +157,11 @@ class UserController extends Controller
 		$sum=DB::table('user')->sum('age');
 		var_dump($sum);
 	}
-
-	public function ORM()
+	//Eloquent ORM建立及查询数据
+	public function ORM1()
 	{
-
 		//all
-		//$user=user::all();
-		//dd($user);
+		$user=user::all();
+		dd($user);
 	}
 }

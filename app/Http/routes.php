@@ -92,4 +92,5 @@ Route::get('GoDBUser4','UserController@GoDBUser4');
 
 Route::get('GoDBUser5','UserController@GoDBUser5');
 
-Route::get('ORM','UserController@ORM');
+Route::get('ORM1','UserController@ORM1');
+
